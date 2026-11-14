@@ -371,3 +371,47 @@ code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-siz
 /* 迷你画廊卡片：图片居中，不拉伸 */
 .gallery figure.mini { display: flex; flex-direction: column; justify-content: center; align-items: center; background: radial-gradient(circle at 50% 40%, rgba(124, 108, 242, .16), rgba(255, 255, 255, .02)); }
 .gallery figure.mini img { width: auto; max-width: 320px; image-rendering: -webkit-optimize-contrast; margin: 26px 0 10px; }
+/* ================= 吉祥物「小岛」 ================= */
+.hero-buddy {
+  display: flex; align-items: center; justify-content: center; gap: 14px;
+  margin: 34px auto 0; max-width: 640px; flex-wrap: wrap;
+}
+.buddy-avatar {
+  width: 64px; height: 64px; border-radius: 18px; flex: none;
+  border: 1px solid rgba(255, 255, 255, .18);
+  box-shadow: 0 10px 30px rgba(74, 200, 255, .22), inset 0 1px 0 rgba(255, 255, 255, .18);
+  animation: bob 5.5s ease-in-out infinite;
+}
+.bubble {
+  position: relative; text-align: left;
+  padding: 12px 18px; border-radius: 16px;
+  font-size: 14.5px; color: var(--ink); line-height: 1.6;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid var(--line-2);
+  backdrop-filter: blur(10px);
+}
+.bubble b { color: #c7bcff; }
+.bubble::before {
+  content: ""; position: absolute; left: -6px; top: 50%; transform: translateY(-50%) rotate(45deg);
+  width: 11px; height: 11px; background: inherit; border-left: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2);
+  border-radius: 2px;
+}
+
+/* 标题里的小头像 */
+.eyebrow.with-mascot { display: inline-flex; align-items: center; gap: 8px; }
+.eyebrow.with-mascot img { width: 22px; height: 22px; border-radius: 7px; border: 1px solid rgba(255, 255, 255, .16); }
+
+/* 段落里的小岛提示 */
+.buddy-tip {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin: 16px 0 0; padding: 12px 14px;
+  border-radius: 12px; font-size: 13.5px; color: var(--ink-2);
+  background: linear-gradient(90deg, rgba(74, 200, 255, .1), rgba(124, 108, 242, .06));
+  border: 1px solid rgba(74, 200, 255, .22);
+}
+.buddy-tip img { width: 26px; height: 26px; border-radius: 8px; flex: none; margin-top: 1px; }
+.buddy-tip span { line-height: 1.6; }
+.center-tip { justify-content: center; max-width: 680px; margin: 22px auto 0; }
+
+/* 页脚吉祥物 */
+.foot-brand img { width: 34px; height: 34px; }

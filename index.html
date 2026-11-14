@@ -67,6 +67,10 @@
         </a>
       </div>
 
+      <div class="hero-buddy reveal">
+        <img class="buddy-avatar" src="assets/img/mascot.png" alt="小岛" width="72" height="72">
+        <div class="bubble">我是<b>小岛</b>，住在这颗胶囊里。先领我回家，再往下看我都会干啥 👇</div>
+      </div>
       <div class="hero-capsule reveal" aria-hidden="true">
         <div class="capsule">
           <span class="cap-dot"></span>
@@ -100,7 +104,7 @@
   <!-- ================= FEATURES ================= -->
   <section class="section" id="features">
     <div class="section-head reveal">
-      <span class="eyebrow">功能总览</span>
+      <span class="eyebrow with-mascot"><img src="assets/img/mascot-face.png" alt="">小岛讲解 · 功能总览</span>
       <h2>一颗胶囊，装下你每天重复的操作</h2>
       <p>所有入口都在屏幕顶部这一小条上，不多开一个窗口，不打断你手上的事。</p>
     </div>
@@ -183,7 +187,7 @@
   <!-- ================= DEEP DIVE ================= -->
   <section class="section dive" id="dive">
     <div class="section-head reveal">
-      <span class="eyebrow">详解</span>
+      <span class="eyebrow with-mascot"><img src="assets/img/mascot-face.png" alt="">小岛讲解 · 详解</span>
       <h2>每个功能，具体怎么用</h2>
       <p>下面按真实使用顺序展开，看完基本不用再翻文档。</p>
     </div>
@@ -194,6 +198,7 @@
         <span class="num">01</span>
         <h3>截图 → 进胶囊 → 直接用</h3>
         <p>三种方式都用同一个逻辑：<b>截完不弹窗</b>，图片直接成为胶囊里的一张卡片。鼠标悬停放大预览，单击看大图，右键出菜单。</p>
+        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：框完松手就行，图片会自己跳进胶囊，不用再去文件夹里找。</span></p>
         <ul class="ticks">
           <li>区域截图带放大镜与像素坐标，适合精确框选</li>
           <li>窗口截图会自动识别鼠标下面的窗口边界</li>
@@ -226,6 +231,7 @@
           <span>步骤 ①②③</span><span>模糊</span><span>马赛克</span><span>裁剪</span>
         </div>
         <p class="fine">支持撤销 / 重做（Ctrl+Z / Ctrl+Y），文字可拖动、可拉长，步骤编号自动递增——写教程特别省事。</p>
+        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：我常用的顺序是「箭头 → 文字 → 步骤号」，三步就能把一张图讲明白。</span></p>
       </div>
       <div class="dive-visual">
         <div class="tool-cloud">
@@ -248,6 +254,7 @@
           <li>AI 引擎填 BaseURL / 模型名 / Key 即可，兼容 OpenAI 格式</li>
           <li>图片里的外文也能翻译，结果另存为图片</li>
         </ul>
+        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：看英文报错最省事——按 F 框住那段红字，中文就盖在原位了。</span></p>
       </div>
       <div class="dive-visual">
         <div class="translate-demo">
@@ -270,6 +277,7 @@
           <li>判断依据是系统音频会话，<b>不读聊天内容、不注入进程</b></li>
         </ul>
         <p class="fine">收起 ≠ 已读：提示条消失只是不挡你，未读状态会一直保留到你去看。</p>
+        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：我只看"有没有声音"，不碰你的聊天记录，放心。</span></p>
       </div>
       <div class="dive-visual">
         <div class="notice-demo">
@@ -291,6 +299,7 @@
           <li>再点一次球就收起（进程不退，下次秒开）</li>
           <li>用的是你系统里的 WebView2，不内置任何破解内容</li>
         </ul>
+        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：窗户一样的小窗，拖到屏幕角落就能一边工作一边刷。</span></p>
       </div>
       <div class="dive-visual">
         <div class="phone-demo">
@@ -313,6 +322,7 @@
           <li>多种歌词视觉样式，可调字体与动效</li>
           <li>快捷键：<code>空格</code> 暂停 · <code>← →</code> 快进 · <code>Esc</code> 收回</li>
         </ul>
+        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：晚上把歌词铺满桌面，比开一个大播放器好看多了。</span></p>
       </div>
       <div class="dive-visual">
         <div class="mini-frame"><img src="assets/img/music-player.png" alt="音乐面板" width="360"></div>
@@ -331,6 +341,7 @@
           <li>输出 <code>data\Recordings\录屏_时间戳.mp4</code></li>
         </ul>
         <p class="fine">需要本机有 ffmpeg：装到系统 PATH，或把 <code>ffmpeg.exe</code> 丢进程序目录。</p>
+        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：录到一半想停？再按一次同一个热键就行，不用找按钮。</span></p>
       </div>
       <div class="dive-visual">
         <div class="rec-demo"><span class="rec-dot"></span> REC <b>00:42</b></div>
@@ -397,7 +408,7 @@
   <!-- ================= DOWNLOAD ================= -->
   <section class="section" id="download">
     <div class="section-head reveal">
-      <span class="eyebrow">下载</span>
+      <span class="eyebrow with-mascot"><img src="assets/img/mascot-face.png" alt="">小岛带你走</span>
       <h2>解压就能用</h2>
       <p>Windows 10 / 11（64 位），需要 .NET Framework 4.8（系统一般自带）。</p>
     </div>
@@ -413,8 +424,9 @@
           <li>无需 WebView2</li>
           <li>解压即用，删文件夹即卸载</li>
         </ul>
-        <a class="btn btn-primary full" href="https://github.com/pl514/myriad-isle/releases/latest">
-          下载 MyriadIsle-3.20.zip
+        <a class="btn btn-primary full" href="https://github.com/pl514/myriad-isle/releases/latest" target="_blank" rel="noopener">
+          去 GitHub 下载 v3.20
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6M20 4l-9 9M10 5H5v14h14v-5"/></svg>
         </a>
         <a class="link-gh" href="https://github.com/pl514/myriad-isle" target="_blank" rel="noopener">源码仓库 →</a>
       </article>
@@ -429,17 +441,20 @@
           <li>需要系统 WebView2 运行时（Win11 自带）</li>
           <li>约 0.78 MB，含运行库</li>
         </ul>
-        <a class="btn btn-primary full" href="https://github.com/pl514/myriad-isle-pro/releases/latest">
-          下载 MyriadIslePro-3.20.zip
+        <a class="btn btn-primary full" href="https://github.com/pl514/myriad-isle-pro/releases/latest" target="_blank" rel="noopener">
+          去 GitHub 下载 v3.20
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6M20 4l-9 9M10 5H5v14h14v-5"/></svg>
         </a>
         <a class="link-gh" href="https://github.com/pl514/myriad-isle-pro" target="_blank" rel="noopener">源码仓库 →</a>
       </article>
     </div>
 
+    <p class="buddy-tip center-tip reveal"><img src="assets/img/mascot-face.png" alt=""><span>小岛：下载和更新都在 GitHub 的 Release 页面，点上面按钮会直达到对应仓库，不会有中间页。</span></p>
+
     <div class="install reveal">
       <h3>三步开始</h3>
       <ol>
-        <li><b>下载</b> 上面的 zip，解压到任意文件夹（不建议放 <code>C:\Program Files</code>）</li>
+        <li><b>下载</b> 对应的 zip（标准版 <code>MyriadIsle-3.20.zip</code> / Pro 版 <code>MyriadIslePro-3.20.zip</code>），解压到任意文件夹（不建议放 <code>C:\Program Files</code>）</li>
         <li><b>双击</b> <code>MyriadIsle.exe</code>（或 Pro 版的 <code>MyriadIslePro.exe</code>）</li>
         <li><b>看顶部</b>，胶囊出现即成功；按 <code>Ctrl + Alt + Shift + A</code> 试试截图</li>
       </ol>
@@ -450,7 +465,7 @@
   <!-- ================= FAQ ================= -->
   <section class="section" id="faq">
     <div class="section-head reveal">
-      <span class="eyebrow">常见问题</span>
+      <span class="eyebrow with-mascot"><img src="assets/img/mascot-face.png" alt="">小岛答疑 · 常见问题</span>
       <h2>你可能想问</h2>
     </div>
 
