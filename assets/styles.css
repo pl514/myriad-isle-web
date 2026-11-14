@@ -447,9 +447,9 @@ code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-siz
 @keyframes mZzz { 0%, 100% { opacity: .25; transform: translateY(2px); } 50% { opacity: 1; transform: translateY(-4px); } }
 
 /* 首屏：小岛站在胶囊上 */
-.hero-buddy { flex-direction: column; align-items: center; gap: 2px; margin-bottom: -82px; position: relative; z-index: 3; }
-.hero-buddy .bubble { margin-bottom: 0; }
-.hero-buddy .mascot-stand { margin-bottom: 0; animation: float 6s ease-in-out infinite; }\n.hero-capsule { z-index: 4; position: relative; }
+.hero-buddy { align-items: center; gap: 12px; margin: 34px auto 0; position: relative; z-index: 3; }
+.hero-buddy .bubble { margin-bottom: 0; max-width: 560px; }
+.mascot-head-lg { width: 40px; height: 40px; animation: bob 5.5s ease-in-out infinite; }
 
 /* 下载 / FAQ 区的小岛 */
 .dl-mascot, .faq-mascot { text-align: center; margin: 8px 0 -6px; }
@@ -466,6 +466,6 @@ code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-siz
 
 @media (max-width: 640px) {
   .hero-buddy { flex-direction: column; align-items: center; gap: 8px; }
-  .hero-buddy .bubble { margin-bottom: 0; }
+  .hero-buddy .bubble { margin-bottom: 0; max-width: 560px; }
   .hero-mascot { width: 128px; }
 }
