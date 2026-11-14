@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>万象岛 · Myriad Isle — 把截图、翻译、抖音收进一颗胶囊</title>
+<meta name="description" content="万象岛是常驻 Windows 顶部的动态岛胶囊：截图、图片编辑、框选翻译、微信QQ提示、录屏，Pro 版还有抖音小窗、音乐面板与桌面歌词。单文件、免安装、全部本地。">
+<meta name="theme-color" content="#070810">
+<meta property="og:title" content="万象岛 · Myriad Isle">
+<meta property="og:description" content="常驻屏幕顶部的动态岛胶囊：截图、编辑、翻译、抖音小窗、音乐。免安装，全部本地。">
+<meta property="og:image" content="assets/img/panel.png">
+<link rel="icon" href="assets/img/app-icon.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <span class="a1"></span><span class="a2"></span><span class="a3"></span>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <img src="assets/img/app-icon.png" alt="" width="26" height="26">
+    <span>万象岛<em>Myriad Isle</em></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#features">功能</a>
+    <a href="#dive">详解</a>
+    <a href="#compare">版本</a>
+    <a href="#gallery">截图</a>
+    <a href="#faq">常见问题</a>
+  </nav>
+  <a class="btn btn-ghost nav-cta" href="#download">下载</a>
+  <button class="nav-toggle" id="navToggle" aria-label="菜单">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="pill-badge reveal">
+        <span class="dot"></span> v3.20 已发布 · 标准版与 Pro 版同步
+      </div>
+
+      <h1 class="reveal">
+        把截图、翻译、抖音<br>
+        <span class="grad">收进一颗胶囊</span>
+      </h1>
+
+      <p class="lede reveal">
+        常驻屏幕顶部的一颗小岛。截图自动落进来，框住哪里就翻译哪里，
+        点一下还能长出抖音小窗和音乐面板。<br>
+        单文件、免安装，所有数据都留在你自己的电脑里。
+      </p>
+
+      <div class="cta-row reveal">
+        <a class="btn btn-primary" href="#download">
+          立即下载
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v11m0 0 4-4m-4 4-4-4M4 20h16"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/pl514/myriad-isle-pro" target="_blank" rel="noopener">
+          在 GitHub 上看源码
+        </a>
+      </div>
+
+      <div class="hero-capsule reveal" aria-hidden="true">
+        <div class="capsule">
+          <span class="cap-dot"></span>
+          <span class="cap-line"></span>
+          <span class="cap-thumb"></span>
+          <span class="cap-line short"></span>
+          <span class="cap-orb"></span>
+          <span class="cap-orb o2"></span>
+          <span class="cap-orb o3"></span>
+        </div>
+        <div class="capsule-glow"></div>
+      </div>
+
+      <div class="hero-shot reveal">
+        <div class="shot-frame">
+          <img src="assets/img/panel.png" alt="万象岛面板截图" width="942" height="216">
+        </div>
+        <div class="shot-caption">图片 / 文字 / 翻译 三个页签，滚轮翻页，右键出菜单</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="stats">
+    <div class="stat reveal"><b>486 KB</b><span>标准版单文件</span></div>
+    <div class="stat reveal"><b>0</b><span>云端上传</span></div>
+    <div class="stat reveal"><b>15+</b><span>标注工具</span></div>
+    <div class="stat reveal"><b>8</b><span>全局热键</span></div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section" id="features">
+    <div class="section-head reveal">
+      <span class="eyebrow">功能总览</span>
+      <h2>一颗胶囊，装下你每天重复的操作</h2>
+      <p>所有入口都在屏幕顶部这一小条上，不多开一个窗口，不打断你手上的事。</p>
+    </div>
+
+    <div class="grid">
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18M8 5v14"/></svg>
+        </div>
+        <h3>三种截图</h3>
+        <p>区域、窗口、全屏。框选带放大镜，松手图片自动进胶囊，不弹窗、不打断。</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19l5-5 3 3 8-8"/><path d="M14 9h6v6"/></svg>
+        </div>
+        <h3>图片编辑</h3>
+        <p>箭头、矩形、画笔、荧光笔、文字、气泡、步骤编号、模糊、马赛克、裁剪，随手标注完直接发。</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h9m3 0h4M4 17h4m3 0h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></svg>
+        </div>
+        <h3>两种翻译</h3>
+        <p>文本翻译随手可用；屏幕翻译框住哪里译哪里，译文直接覆盖在原位置。</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h9a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H9l-3 3v-3a3 3 0 0 1-3-3v-5a3 3 0 0 1 3-3Z"/><path d="M10 3h8a3 3 0 0 1 3 3v4"/></svg>
+        </div>
+        <h3>微信 / QQ 提示</h3>
+        <p>有新消息，胶囊右侧冒出一条提示。左边微信、右边 QQ，点一下就跳过去。</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="5" width="13" height="14" rx="3"/><path d="M20 8v8"/><circle cx="10.5" cy="12" r="2.5"/></svg>
+        </div>
+        <h3>录屏</h3>
+        <p>一键开录，优先走桌面复制（画面不闪），失败自动降级。输出标准 MP4。</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="4"/><path d="M3 9h18"/><circle cx="7" cy="6.5" r=".8" fill="currentColor"/></svg>
+        </div>
+        <h3>抖音小窗 <span class="tag-pro">Pro</span></h3>
+        <p>独立置顶横屏小窗刷网页版抖音，可拖动可缩放，位置记住，再点一次即收起。</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="2.4"/><circle cx="16" cy="16" r="2.4"/></svg>
+        </div>
+        <h3>音乐与歌词 <span class="tag-pro">Pro</span></h3>
+        <p>播放器、歌单、队列、封面、歌词；还能把歌词铺到桌面上，多种视觉样式。</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.2 5.3L20 9l-4 3.9.9 5.6-4.9-2.7-4.9 2.7.9-5.6L4 9l5.8-.7Z"/></svg>
+        </div>
+        <h3>AI 问答 <span class="tag-pro">Pro</span></h3>
+        <p>内置 AI 面板，可接任意 OpenAI 兼容接口；也能用网页版大模型当后端。</p>
+      </article>
+
+      <article class="card reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.4"/></svg>
+        </div>
+        <h3>绿色免安装</h3>
+        <p>解压即用，删文件夹即卸载。数据都在程序目录，换电脑拷走就行。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= DEEP DIVE ================= -->
+  <section class="section dive" id="dive">
+    <div class="section-head reveal">
+      <span class="eyebrow">详解</span>
+      <h2>每个功能，具体怎么用</h2>
+      <p>下面按真实使用顺序展开，看完基本不用再翻文档。</p>
+    </div>
+
+    <!-- 截图流 -->
+    <article class="dive-row reveal">
+      <div class="dive-text">
+        <span class="num">01</span>
+        <h3>截图 → 进胶囊 → 直接用</h3>
+        <p>三种方式都用同一个逻辑：<b>截完不弹窗</b>，图片直接成为胶囊里的一张卡片。鼠标悬停放大预览，单击看大图，右键出菜单。</p>
+        <ul class="ticks">
+          <li>区域截图带放大镜与像素坐标，适合精确框选</li>
+          <li>窗口截图会自动识别鼠标下面的窗口边界</li>
+          <li>全屏截图支持多显示器</li>
+          <li>拖拽：把卡片直接拖进微信、QQ、资源管理器、PS……</li>
+        </ul>
+      </div>
+      <div class="dive-visual">
+        <div class="cap-mock">
+          <div class="cap-thumbnail"></div>
+          <div class="cap-meta">
+            <b>截图_20261114_1042.png</b>
+            <span>1920 × 1080 · 刚刚</span>
+          </div>
+          <div class="cap-actions"><i>⤓</i><i>✎</i><i>⋯</i></div>
+        </div>
+        <p class="mini-note">顶部就是这样一条，不挡视线</p>
+      </div>
+    </article>
+
+    <!-- 编辑器 -->
+    <article class="dive-row reverse reveal">
+      <div class="dive-text">
+        <span class="num">02</span>
+        <h3>标注不用打开 PS</h3>
+        <p>点开任意图片就能进编辑器，左侧工具栏一列排开，改完保存覆盖原图，或另存为新文件。</p>
+        <div class="chips">
+          <span>矩形</span><span>椭圆</span><span>箭头</span><span>直线</span>
+          <span>画笔</span><span>荧光笔</span><span>文字</span><span>气泡</span>
+          <span>步骤 ①②③</span><span>模糊</span><span>马赛克</span><span>裁剪</span>
+        </div>
+        <p class="fine">支持撤销 / 重做（Ctrl+Z / Ctrl+Y），文字可拖动、可拉长，步骤编号自动递增——写教程特别省事。</p>
+      </div>
+      <div class="dive-visual">
+        <div class="tool-cloud">
+          <span class="tc tc1">▭</span><span class="tc tc2">➜</span><span class="tc tc3">✎</span>
+          <span class="tc tc4">🖍</span><span class="tc tc5">T</span><span class="tc tc6">💬</span>
+          <span class="tc tc7">①</span><span class="tc tc8">▩</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 翻译 -->
+    <article class="dive-row reveal">
+      <div class="dive-text">
+        <span class="num">03</span>
+        <h3>翻译：文本与屏幕，两条路</h3>
+        <p><b>文本翻译</b>：胶囊里点开「文字」页签，收进来的一段话可以直接翻。</p>
+        <p><b>屏幕翻译</b>：按热键，框住屏幕上任意一块区域，OCR 识别后把译文<b>盖回原来的位置</b>，像给屏幕套了一层中文。</p>
+        <ul class="ticks">
+          <li>引擎可切换：免费 MyMemory，或你自己的 AI 模型</li>
+          <li>AI 引擎填 BaseURL / 模型名 / Key 即可，兼容 OpenAI 格式</li>
+          <li>图片里的外文也能翻译，结果另存为图片</li>
+        </ul>
+      </div>
+      <div class="dive-visual">
+        <div class="translate-demo">
+          <div class="src">Hello, world!<br>This is a screenshot.</div>
+          <div class="arrow-down">↓</div>
+          <div class="dst">你好，世界！<br>这是一张截图。</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 提示 -->
+    <article class="dive-row reverse reveal">
+      <div class="dive-text">
+        <span class="num">04</span>
+        <h3>微信 / QQ 有消息，胶囊替你看一眼</h3>
+        <p>不用切窗口判断"是不是有人找我"。有新消息时，胶囊右侧会冒出一条提示：</p>
+        <ul class="ticks">
+          <li>两个都有未读：<b>左半边点微信，右半边点 QQ</b></li>
+          <li>只有一个有未读：点哪都是它</li>
+          <li>判断依据是系统音频会话，<b>不读聊天内容、不注入进程</b></li>
+        </ul>
+        <p class="fine">收起 ≠ 已读：提示条消失只是不挡你，未读状态会一直保留到你去看。</p>
+      </div>
+      <div class="dive-visual">
+        <div class="notice-demo">
+          <div class="nd-bar"><span class="nd-app">💬 微信 3 条未读</span><span class="nd-app qq">QQ 1 条</span></div>
+          <span class="nd-hint">点击直达对应窗口</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 抖音 -->
+    <article class="dive-row reveal">
+      <div class="dive-text">
+        <span class="num">05</span>
+        <h3>抖音小窗 <span class="tag-pro">Pro</span></h3>
+        <p>点胶囊旁的 <code>•••</code> → 抖音球，弹出一个横屏置顶小窗，里面是网页版抖音。</p>
+        <ul class="ticks">
+          <li>始终置顶，刷的时候不会被别的窗口盖住</li>
+          <li>可拖动、可缩放，关掉后记住位置</li>
+          <li>再点一次球就收起（进程不退，下次秒开）</li>
+          <li>用的是你系统里的 WebView2，不内置任何破解内容</li>
+        </ul>
+      </div>
+      <div class="dive-visual">
+        <div class="phone-demo">
+          <div class="ph-notch"></div>
+          <div class="ph-body"><span>▶</span></div>
+        </div>
+        <p class="mini-note">横屏小窗，像手机转 90°</p>
+      </div>
+    </article>
+
+    <!-- 音乐 -->
+    <article class="dive-row reverse reveal">
+      <div class="dive-text">
+        <span class="num">06</span>
+        <h3>音乐：从胶囊里长出来 <span class="tag-pro">Pro</span></h3>
+        <p>点音乐球，面板从胶囊里展开：平台切换、歌单、搜索、播放队列、封面、歌词全在里面。</p>
+        <ul class="ticks">
+          <li>收起后胶囊变成一条迷你播放条，切歌不用展开</li>
+          <li><b>歌词投射</b>：把歌词铺满桌面，背景淡化，逐字高亮</li>
+          <li>多种歌词视觉样式，可调字体与动效</li>
+          <li>快捷键：<code>空格</code> 暂停 · <code>← →</code> 快进 · <code>Esc</code> 收回</li>
+        </ul>
+      </div>
+      <div class="dive-visual">
+        <div class="mini-frame"><img src="assets/img/music-player.png" alt="音乐面板" width="360"></div>
+      </div>
+    </article>
+
+    <!-- 录屏 -->
+    <article class="dive-row reveal">
+      <div class="dive-text">
+        <span class="num">07</span>
+        <h3>录屏：一个热键开始，一个热键结束</h3>
+        <p>按 <code>Ctrl + Alt + Shift + R</code> 开始，再按一次停止，视频自动挂进胶囊。</p>
+        <ul class="ticks">
+          <li>优先用桌面复制（ddagrab），画面不闪、鼠标正常</li>
+          <li>失败自动退回传统抓屏（gdigrab）</li>
+          <li>输出 <code>data\Recordings\录屏_时间戳.mp4</code></li>
+        </ul>
+        <p class="fine">需要本机有 ffmpeg：装到系统 PATH，或把 <code>ffmpeg.exe</code> 丢进程序目录。</p>
+      </div>
+      <div class="dive-visual">
+        <div class="rec-demo"><span class="rec-dot"></span> REC <b>00:42</b></div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ================= COMPARE ================= -->
+  <section class="section" id="compare">
+    <div class="section-head reveal">
+      <span class="eyebrow">选哪个</span>
+      <h2>标准版 与 Pro 版</h2>
+      <p>同一套内核，两种取舍。标准版追求极致轻量，Pro 版把娱乐功能也装进来。</p>
+    </div>
+
+    <div class="compare reveal">
+      <table>
+        <thead>
+          <tr><th>能力</th><th>标准版</th><th class="pro-col">Pro 版</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>体积</td><td>486 KB 单文件</td><td class="pro-col">约 1 MB + WebView2</td></tr>
+          <tr><td>截图 / 图片编辑</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>文本 / 屏幕翻译</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>微信 / QQ 提示</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>录屏 / 视频播放</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>抖音置顶小窗</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>音乐面板 / 桌面歌词</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>AI 问答面板</td><td class="no">—</td><td class="yes">✓</td></tr>
+          <tr><td>三点球快捷入口</td><td class="no">—</td><td class="yes">✓</td></tr>
+        </tbody>
+      </table>
+      <p class="fine center">两个版本可以同时安装、同时运行，互不冲突。</p>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="section" id="gallery">
+    <div class="section-head reveal">
+      <span class="eyebrow">界面</span>
+      <h2>看起来是这样</h2>
+      <p>暗色玻璃质感，和桌面壁纸自然融合，不抢注意力。</p>
+    </div>
+    <div class="gallery">
+      <figure class="reveal">
+        <img src="assets/img/music-player.png" alt="音乐面板">
+        <figcaption>音乐面板 · 歌单 / 封面 / 歌词</figcaption>
+      </figure>
+      <figure class="reveal mini">
+        <img src="assets/img/capsule-mini.png" alt="迷你播放器">
+        <figcaption>收起后变成迷你播放条</figcaption>
+      </figure>
+      <figure class="reveal wide">
+        <img src="assets/img/music-lyrics.png" alt="桌面歌词">
+        <figcaption>桌面歌词 · 逐字高亮，背景自动淡化</figcaption>
+      </figure>
+      <figure class="reveal wide">
+        <img src="assets/img/panel.png" alt="面板">
+        <figcaption>图片 / 文字 / 翻译 三个页签</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= DOWNLOAD ================= -->
+  <section class="section" id="download">
+    <div class="section-head reveal">
+      <span class="eyebrow">下载</span>
+      <h2>解压就能用</h2>
+      <p>Windows 10 / 11（64 位），需要 .NET Framework 4.8（系统一般自带）。</p>
+    </div>
+
+    <div class="dl-grid">
+      <article class="dl-card reveal">
+        <div class="dl-top">
+          <h3>标准版</h3>
+          <span class="ver">v3.20</span>
+        </div>
+        <p class="dl-desc">单文件 486 KB，只有截图、编辑、翻译、提示、录屏。最轻的选择。</p>
+        <ul class="dl-list">
+          <li>无需 WebView2</li>
+          <li>解压即用，删文件夹即卸载</li>
+        </ul>
+        <a class="btn btn-primary full" href="https://github.com/pl514/myriad-isle/releases/latest">
+          下载 MyriadIsle-3.20.zip
+        </a>
+        <a class="link-gh" href="https://github.com/pl514/myriad-isle" target="_blank" rel="noopener">源码仓库 →</a>
+      </article>
+
+      <article class="dl-card pro reveal">
+        <div class="dl-top">
+          <h3>Pro 版 <span class="tag-pro">推荐</span></h3>
+          <span class="ver">v3.20</span>
+        </div>
+        <p class="dl-desc">在标准版之上，加了抖音小窗、音乐面板、桌面歌词、AI 问答。</p>
+        <ul class="dl-list">
+          <li>需要系统 WebView2 运行时（Win11 自带）</li>
+          <li>约 0.78 MB，含运行库</li>
+        </ul>
+        <a class="btn btn-primary full" href="https://github.com/pl514/myriad-isle-pro/releases/latest">
+          下载 MyriadIslePro-3.20.zip
+        </a>
+        <a class="link-gh" href="https://github.com/pl514/myriad-isle-pro" target="_blank" rel="noopener">源码仓库 →</a>
+      </article>
+    </div>
+
+    <div class="install reveal">
+      <h3>三步开始</h3>
+      <ol>
+        <li><b>下载</b> 上面的 zip，解压到任意文件夹（不建议放 <code>C:\Program Files</code>）</li>
+        <li><b>双击</b> <code>MyriadIsle.exe</code>（或 Pro 版的 <code>MyriadIslePro.exe</code>）</li>
+        <li><b>看顶部</b>，胶囊出现即成功；按 <code>Ctrl + Alt + Shift + A</code> 试试截图</li>
+      </ol>
+      <p class="fine">程序未签名，若被 Defender / 360 / 火绒拦截，把文件夹加入信任即可。</p>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="section-head reveal">
+      <span class="eyebrow">常见问题</span>
+      <h2>你可能想问</h2>
+    </div>
+
+    <div class="faq reveal">
+      <details>
+        <summary>双击没反应 / 一闪而过？</summary>
+        <p>多半是杀软拦截或缺少 WebView2（Pro 版）。先把整个文件夹加入信任；Pro 版还需要系统装 Microsoft Edge WebView2 Runtime（Win11 自带，Win10 可去微软官网下载）。</p>
+      </details>
+      <details>
+        <summary>把图片拖到微信没反应？</summary>
+        <p>Windows 不允许低权限进程向高权限进程拖文件。请用<b>普通权限</b>运行万象岛（不要右键"以管理员身份运行"），也不要在低权限沙箱 / 远程桌面里启动。</p>
+      </details>
+      <details>
+        <summary>翻译提示"配额用完"？</summary>
+        <p>默认走 MyMemory 免费接口，按天计算额度。可以等一会儿，或在设置里换成自己的 AI 模型（DeepSeek、智谱等都有免费额度）。</p>
+      </details>
+      <details>
+        <summary>热键按了没反应？</summary>
+        <p>可能被输入法或其它软件占用。托盘右键 → 热键设置，换一组组合，程序会提示是否注册成功。</p>
+      </details>
+      <details>
+        <summary>录屏出来是黑屏？</summary>
+        <p>部分游戏或受保护窗口禁止桌面复制。可以切换录制模式，或换一个较新的 ffmpeg 版本。</p>
+      </details>
+      <details>
+        <summary>会上传我的截图吗？</summary>
+        <p>不会。所有图片、文字、配置都保存在你本机 <code>data\</code> 目录。只有你主动使用翻译时才会请求翻译服务；抖音 / 音乐是 WebView2 加载对应网站。</p>
+      </details>
+      <details>
+        <summary>两个版本能一起装吗？</summary>
+        <p>可以，进程名不同（<code>MyriadIsle.exe</code> / <code>MyriadIslePro.exe</code>），互不影响，甚至可以同时运行。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="cta-end reveal">
+    <h2>让截图不再打断你的工作流</h2>
+    <p>下载、解压、双击——三步之后，胶囊就在你屏幕顶部了。</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#download">下载 标准版</a>
+      <a class="btn btn-ghost" href="https://github.com/pl514/myriad-isle-pro/releases/latest">下载 Pro 版</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <img src="assets/img/app-icon.png" alt="" width="28" height="28">
+      <div>
+        <b>万象岛 · Myriad Isle</b>
+        <span>Windows 动态岛胶囊工具集</span>
+      </div>
+    </div>
+    <div class="foot-links">
+      <a href="https://github.com/pl514/myriad-isle" target="_blank" rel="noopener">标准版源码</a>
+      <a href="https://github.com/pl514/myriad-isle-pro" target="_blank" rel="noopener">Pro 源码</a>
+      <a href="https://github.com/pl514/myriad-isle-pro/issues" target="_blank" rel="noopener">反馈问题</a>
+      <a href="https://github.com/pl514/myriad-isle-pro/blob/main/DISCLAIMER.md" target="_blank" rel="noopener">免责声明</a>
+      <a href="https://github.com/pl514/myriad-isle-pro/blob/main/LICENSE" target="_blank" rel="noopener">MIT 许可</a>
+    </div>
+  </div>
+  <p class="foot-note">
+    与字节跳动、腾讯等公司无隶属关系；抖音 / 微信 / QQ 相关功能仅在本机调用用户已安装的客户端或公开网页。
+    第三方商标归各自所有者。
+  </p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
