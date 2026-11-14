@@ -415,3 +415,57 @@ code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-siz
 
 /* 页脚吉祥物 */
 .foot-brand img { width: 34px; height: 34px; }
+/* ================= 小岛（SVG 吉祥物） ================= */
+.mascot-stand { display: inline-block; line-height: 0; }
+.mascot { width: 150px; height: auto; overflow: visible; }
+.hero-mascot { width: 172px; }
+.m-shadow { fill: rgba(0, 0, 0, .38); }
+.m-arm { transform-box: fill-box; transform-origin: 50% 8%; transition: transform .55s cubic-bezier(.2, .8, .2, 1); }
+.m-thought { fill: #cfe4f7; opacity: 0; transition: opacity .4s; }
+.m-zzz text { fill: #cfe4f7; font-size: 20px; font-weight: 700; opacity: 0; }
+.m-eye { transform-box: fill-box; transform-origin: 50% 50%; animation: mBlink 6.5s infinite; }
+@keyframes mBlink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  94%, 96% { transform: scaleY(.12); }
+}
+
+/* 姿态 */
+.pose-wave .m-arm-r { animation: mWave 2.6s ease-in-out infinite; }
+@keyframes mWave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  70% { transform: rotate(-38deg); }
+  85% { transform: rotate(-22deg); }
+}
+.pose-point .m-arm-r { transform: rotate(-58deg); }
+.pose-point .m-body, .pose-point > rect { }
+.pose-think .m-arm-l { transform: rotate(58deg); }
+.pose-think .m-thought { opacity: 1; animation: mThought 3s ease-in-out infinite; }
+@keyframes mThought { 50% { transform: translateY(-4px); } }
+.pose-sleep .m-eye { animation: none; transform: scaleY(.14); }
+.pose-sleep .m-zzz text { opacity: 1; animation: mZzz 3.2s ease-in-out infinite; }
+.pose-sleep .m-zzz text:nth-child(2) { animation-delay: 1.1s; }
+@keyframes mZzz { 0%, 100% { opacity: .25; transform: translateY(2px); } 50% { opacity: 1; transform: translateY(-4px); } }
+
+/* 首屏：小岛站在胶囊上 */
+.hero-buddy { flex-direction: column; align-items: center; gap: 2px; margin-bottom: -82px; position: relative; z-index: 3; }
+.hero-buddy .bubble { margin-bottom: 0; }
+.hero-buddy .mascot-stand { margin-bottom: 0; animation: float 6s ease-in-out infinite; }\n.hero-capsule { z-index: 4; position: relative; }
+
+/* 下载 / FAQ 区的小岛 */
+.dl-mascot, .faq-mascot { text-align: center; margin: 8px 0 -6px; }
+.dl-mascot .mascot { width: 132px; }
+.faq-mascot .mascot { width: 112px; }
+.foot-mascot { display: block; }
+.foot-mascot { display: block; margin-right: 8px; }\n.foot-mascot .mascot { width: 84px; opacity: .92; }
+
+/* 小头像（JS 注入） */
+.mascot-head { display: inline-block; width: 22px; height: 22px; vertical-align: middle; line-height: 0; flex: none; }
+.mascot-head svg { width: 100%; height: 100%; display: block; }
+.eyebrow.with-mascot .mascot-head { width: 24px; height: 24px; }
+.buddy-tip .mascot-head { width: 26px; height: 26px; margin-top: 1px; }
+
+@media (max-width: 640px) {
+  .hero-buddy { flex-direction: column; align-items: center; gap: 8px; }
+  .hero-buddy .bubble { margin-bottom: 0; }
+  .hero-mascot { width: 128px; }
+}

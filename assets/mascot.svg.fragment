@@ -1,0 +1,60 @@
+<svg class="mascot hero-mascot" viewBox="0 0 240 282" role="img" aria-label="小岛">
+  <defs>
+    <linearGradient id="mBody" x1=".2" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#eef5fc"/>
+      <stop offset=".78" stop-color="#d5e2f0"/><stop offset="1" stop-color="#b9cbdd"/>
+    </linearGradient>
+    <linearGradient id="mVisor" x1=".3" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#183753"/><stop offset=".55" stop-color="#0c1d2d"/><stop offset="1" stop-color="#060f18"/>
+    </linearGradient>
+    <linearGradient id="mEye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ccfdff"/><stop offset=".5" stop-color="#5fe0ff"/><stop offset="1" stop-color="#25b3ef"/>
+    </linearGradient>
+    <radialGradient id="mShade" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#0a1520" stop-opacity=".45"/><stop offset="1" stop-color="#0a1520" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <ellipse class="m-shadow" cx="120" cy="268" rx="60" ry="10"/>
+
+  <!-- 脚 -->
+  <ellipse cx="94" cy="248" rx="21" ry="16" fill="url(#mBody)"/>
+  <ellipse cx="146" cy="248" rx="21" ry="16" fill="url(#mBody)"/>
+  <ellipse cx="94" cy="252" rx="21" ry="10" fill="#b9cbdd" opacity=".5"/>
+  <ellipse cx="146" cy="252" rx="21" ry="10" fill="#b9cbdd" opacity=".5"/>
+
+  <!-- 机械手 -->
+  <g class="m-arm m-arm-l">
+    <rect x="40" y="126" width="28" height="70" rx="14" fill="url(#mBody)"/>
+    <circle cx="54" cy="198" r="17.5" fill="#ffffff"/>
+    <path d="M46 196h16" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="m-arm m-arm-r">
+    <rect x="172" y="126" width="28" height="70" rx="14" fill="url(#mBody)"/>
+    <circle cx="186" cy="198" r="17.5" fill="#ffffff"/>
+    <path d="M178 196h16" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 身体 -->
+  <rect x="62" y="34" width="116" height="206" rx="58" fill="url(#mBody)"/>
+  <ellipse cx="92" cy="72" rx="27" ry="18" fill="#ffffff" opacity=".6"/>
+  <path d="M172 62c8 14 10 30 8 44" stroke="#ffffff" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/>
+  <path d="M70 160h100" stroke="#cfdceb" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+  <ellipse cx="120" cy="222" rx="46" ry="14" fill="url(#mShade)"/>
+
+  <!-- 面罩 -->
+  <rect x="80" y="62" width="80" height="66" rx="31" fill="url(#mVisor)"/>
+  <rect x="83" y="65" width="74" height="60" rx="29" fill="none" stroke="#3d6b91" stroke-width="1" opacity=".35"/>
+  <rect class="m-eye" x="99" y="79" width="12" height="32" rx="6" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <rect class="m-eye" x="129" y="79" width="12" height="32" rx="6" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <path d="M89 76c8-9 20-12 31-11" stroke="#a7c2da" stroke-width="2.4" fill="none" opacity=".45" stroke-linecap="round"/>
+
+  <!-- 思考气泡 / 睡觉 -->
+  <g class="m-thought">
+    <circle cx="196" cy="82" r="4.5"/><circle cx="210" cy="60" r="6.5"/><circle cx="228" cy="34" r="9.5"/>
+  </g>
+  <g class="m-zzz"><text x="186" y="66">z</text><text x="206" y="44">z</text></g>
+</svg>

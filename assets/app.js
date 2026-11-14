@@ -74,4 +74,18 @@
       window.scrollTo({ top: top, behavior: 'smooth' });
     });
   });
+
+  /* ---------- 小岛头像：内联 SVG，任意尺寸都清晰 ---------- */
+  var HEAD_SVG = '<svg viewBox="0 0 88 88" aria-hidden="true">'
+    + '<defs>'
+    + '<linearGradient id="hBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#e9f2fb"/><stop offset="1" stop-color="#c9d8e8"/></linearGradient>'
+    + '<linearGradient id="hVisor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16304a"/><stop offset="1" stop-color="#08131f"/></linearGradient>'
+    + '<linearGradient id="hEye" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b6fbff"/><stop offset="1" stop-color="#2fbdf2"/></linearGradient>'
+    + '</defs>'
+    + '<rect x="10" y="12" width="68" height="66" rx="34" fill="url(#hBody)"/>'
+    + '<rect x="20" y="24" width="48" height="40" rx="20" fill="url(#hVisor)"/>'
+    + '<rect class="h-eye" x="30" y="33" width="8" height="21" rx="4" fill="url(#hEye)"/>'
+    + '<rect class="h-eye" x="50" y="33" width="8" height="21" rx="4" fill="url(#hEye)"/>'
+    + '</svg>';
+  document.querySelectorAll('[data-mascot-head]').forEach(function (el) { el.innerHTML = HEAD_SVG; });
 })();

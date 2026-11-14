@@ -68,8 +68,67 @@
       </div>
 
       <div class="hero-buddy reveal">
-        <img class="buddy-avatar" src="assets/img/mascot.png" alt="小岛" width="72" height="72">
         <div class="bubble">我是<b>小岛</b>，住在这颗胶囊里。先领我回家，再往下看我都会干啥 👇</div>
+        <div class="mascot-stand pose-wave"><svg class="mascot hero-mascot" viewBox="0 0 240 282" role="img" aria-label="小岛">
+  <defs>
+    <linearGradient id="mBody" x1=".2" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#eef5fc"/>
+      <stop offset=".78" stop-color="#d5e2f0"/><stop offset="1" stop-color="#b9cbdd"/>
+    </linearGradient>
+    <linearGradient id="mVisor" x1=".3" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#183753"/><stop offset=".55" stop-color="#0c1d2d"/><stop offset="1" stop-color="#060f18"/>
+    </linearGradient>
+    <linearGradient id="mEye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ccfdff"/><stop offset=".5" stop-color="#5fe0ff"/><stop offset="1" stop-color="#25b3ef"/>
+    </linearGradient>
+    <radialGradient id="mShade" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#0a1520" stop-opacity=".45"/><stop offset="1" stop-color="#0a1520" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <ellipse class="m-shadow" cx="120" cy="268" rx="60" ry="10"/>
+
+  <!-- 脚 -->
+  <ellipse cx="95" cy="248" rx="23" ry="18" fill="url(#mBody)"/>
+  <ellipse cx="145" cy="248" rx="23" ry="18" fill="url(#mBody)"/>
+  <ellipse cx="95" cy="253" rx="23" ry="10" fill="#b9cbdd" opacity=".5"/>
+  <ellipse cx="145" cy="253" rx="23" ry="10" fill="#b9cbdd" opacity=".5"/>
+
+  <!-- 机械手 -->
+  <g class="m-arm m-arm-l">
+    <rect x="44" y="124" width="30" height="72" rx="15" fill="url(#mBody)"/>
+    <circle cx="59" cy="199" r="19" fill="#ffffff"/>
+    <path d="M50 197h18" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="m-arm m-arm-r">
+    <rect x="166" y="124" width="30" height="72" rx="15" fill="url(#mBody)"/>
+    <circle cx="181" cy="199" r="19" fill="#ffffff"/>
+    <path d="M172 197h18" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 身体 -->
+  <rect x="65" y="32" width="110" height="208" rx="55" fill="url(#mBody)" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <ellipse cx="92" cy="72" rx="27" ry="18" fill="#ffffff" opacity=".6"/>
+  <path d="M172 62c8 14 10 30 8 44" stroke="#ffffff" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/>
+  <path d="M72 164h96" stroke="#cfdceb" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+  <ellipse cx="120" cy="214" rx="50" ry="24" fill="url(#mShade)" opacity=".8"/>
+
+  <!-- 面罩 -->
+  <rect x="76" y="56" width="88" height="76" rx="36" fill="url(#mVisor)"/>
+  <rect x="79" y="59" width="82" height="70" rx="34" fill="none" stroke="#3d6b91" stroke-width="1" opacity=".35"/>
+  <rect class="m-eye" x="95" y="76" width="14" height="37" rx="7" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <rect class="m-eye" x="131" y="76" width="14" height="37" rx="7" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <path d="M89 76c8-9 20-12 31-11" stroke="#a7c2da" stroke-width="2.4" fill="none" opacity=".45" stroke-linecap="round"/>
+
+  <!-- 思考气泡 / 睡觉 -->
+  <g class="m-thought">
+    <circle cx="196" cy="82" r="4.5"/><circle cx="210" cy="60" r="6.5"/><circle cx="228" cy="34" r="9.5"/>
+  </g>
+  <g class="m-zzz"><text x="186" y="66">z</text><text x="206" y="44">z</text></g>
+</svg>        </div>
       </div>
       <div class="hero-capsule reveal" aria-hidden="true">
         <div class="capsule">
@@ -104,7 +163,7 @@
   <!-- ================= FEATURES ================= -->
   <section class="section" id="features">
     <div class="section-head reveal">
-      <span class="eyebrow with-mascot"><img src="assets/img/mascot-face.png" alt="">小岛讲解 · 功能总览</span>
+      <span class="eyebrow with-mascot"><span class="mascot-head" data-mascot-head></span>小岛讲解 · 功能总览</span>
       <h2>一颗胶囊，装下你每天重复的操作</h2>
       <p>所有入口都在屏幕顶部这一小条上，不多开一个窗口，不打断你手上的事。</p>
     </div>
@@ -187,7 +246,7 @@
   <!-- ================= DEEP DIVE ================= -->
   <section class="section dive" id="dive">
     <div class="section-head reveal">
-      <span class="eyebrow with-mascot"><img src="assets/img/mascot-face.png" alt="">小岛讲解 · 详解</span>
+      <span class="eyebrow with-mascot"><span class="mascot-head" data-mascot-head></span>小岛讲解 · 详解</span>
       <h2>每个功能，具体怎么用</h2>
       <p>下面按真实使用顺序展开，看完基本不用再翻文档。</p>
     </div>
@@ -198,7 +257,7 @@
         <span class="num">01</span>
         <h3>截图 → 进胶囊 → 直接用</h3>
         <p>三种方式都用同一个逻辑：<b>截完不弹窗</b>，图片直接成为胶囊里的一张卡片。鼠标悬停放大预览，单击看大图，右键出菜单。</p>
-        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：框完松手就行，图片会自己跳进胶囊，不用再去文件夹里找。</span></p>
+        <p class="buddy-tip"><span class="mascot-head" data-mascot-head></span><span>小岛：框完松手就行，图片会自己跳进胶囊，不用再去文件夹里找。</span></p>
         <ul class="ticks">
           <li>区域截图带放大镜与像素坐标，适合精确框选</li>
           <li>窗口截图会自动识别鼠标下面的窗口边界</li>
@@ -231,7 +290,7 @@
           <span>步骤 ①②③</span><span>模糊</span><span>马赛克</span><span>裁剪</span>
         </div>
         <p class="fine">支持撤销 / 重做（Ctrl+Z / Ctrl+Y），文字可拖动、可拉长，步骤编号自动递增——写教程特别省事。</p>
-        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：我常用的顺序是「箭头 → 文字 → 步骤号」，三步就能把一张图讲明白。</span></p>
+        <p class="buddy-tip"><span class="mascot-head" data-mascot-head></span><span>小岛：我常用的顺序是「箭头 → 文字 → 步骤号」，三步就能把一张图讲明白。</span></p>
       </div>
       <div class="dive-visual">
         <div class="tool-cloud">
@@ -254,7 +313,7 @@
           <li>AI 引擎填 BaseURL / 模型名 / Key 即可，兼容 OpenAI 格式</li>
           <li>图片里的外文也能翻译，结果另存为图片</li>
         </ul>
-        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：看英文报错最省事——按 F 框住那段红字，中文就盖在原位了。</span></p>
+        <p class="buddy-tip"><span class="mascot-head" data-mascot-head></span><span>小岛：看英文报错最省事——按 F 框住那段红字，中文就盖在原位了。</span></p>
       </div>
       <div class="dive-visual">
         <div class="translate-demo">
@@ -277,7 +336,7 @@
           <li>判断依据是系统音频会话，<b>不读聊天内容、不注入进程</b></li>
         </ul>
         <p class="fine">收起 ≠ 已读：提示条消失只是不挡你，未读状态会一直保留到你去看。</p>
-        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：我只看"有没有声音"，不碰你的聊天记录，放心。</span></p>
+        <p class="buddy-tip"><span class="mascot-head" data-mascot-head></span><span>小岛：我只看"有没有声音"，不碰你的聊天记录，放心。</span></p>
       </div>
       <div class="dive-visual">
         <div class="notice-demo">
@@ -299,7 +358,7 @@
           <li>再点一次球就收起（进程不退，下次秒开）</li>
           <li>用的是你系统里的 WebView2，不内置任何破解内容</li>
         </ul>
-        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：窗户一样的小窗，拖到屏幕角落就能一边工作一边刷。</span></p>
+        <p class="buddy-tip"><span class="mascot-head" data-mascot-head></span><span>小岛：窗户一样的小窗，拖到屏幕角落就能一边工作一边刷。</span></p>
       </div>
       <div class="dive-visual">
         <div class="phone-demo">
@@ -322,7 +381,7 @@
           <li>多种歌词视觉样式，可调字体与动效</li>
           <li>快捷键：<code>空格</code> 暂停 · <code>← →</code> 快进 · <code>Esc</code> 收回</li>
         </ul>
-        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：晚上把歌词铺满桌面，比开一个大播放器好看多了。</span></p>
+        <p class="buddy-tip"><span class="mascot-head" data-mascot-head></span><span>小岛：晚上把歌词铺满桌面，比开一个大播放器好看多了。</span></p>
       </div>
       <div class="dive-visual">
         <div class="mini-frame"><img src="assets/img/music-player.png" alt="音乐面板" width="360"></div>
@@ -341,7 +400,7 @@
           <li>输出 <code>data\Recordings\录屏_时间戳.mp4</code></li>
         </ul>
         <p class="fine">需要本机有 ffmpeg：装到系统 PATH，或把 <code>ffmpeg.exe</code> 丢进程序目录。</p>
-        <p class="buddy-tip"><img src="assets/img/mascot-face.png" alt=""><span>小岛：录到一半想停？再按一次同一个热键就行，不用找按钮。</span></p>
+        <p class="buddy-tip"><span class="mascot-head" data-mascot-head></span><span>小岛：录到一半想停？再按一次同一个热键就行，不用找按钮。</span></p>
       </div>
       <div class="dive-visual">
         <div class="rec-demo"><span class="rec-dot"></span> REC <b>00:42</b></div>
@@ -408,7 +467,7 @@
   <!-- ================= DOWNLOAD ================= -->
   <section class="section" id="download">
     <div class="section-head reveal">
-      <span class="eyebrow with-mascot"><img src="assets/img/mascot-face.png" alt="">小岛带你走</span>
+      <span class="eyebrow with-mascot"><span class="mascot-head" data-mascot-head></span>小岛带你走</span>
       <h2>解压就能用</h2>
       <p>Windows 10 / 11（64 位），需要 .NET Framework 4.8（系统一般自带）。</p>
     </div>
@@ -449,7 +508,67 @@
       </article>
     </div>
 
-    <p class="buddy-tip center-tip reveal"><img src="assets/img/mascot-face.png" alt=""><span>小岛：下载和更新都在 GitHub 的 Release 页面，点上面按钮会直达到对应仓库，不会有中间页。</span></p>
+    <div class="dl-mascot reveal"><div class="mascot-stand pose-point"><svg class="mascot hero-mascot" viewBox="0 0 240 282" role="img" aria-label="小岛">
+  <defs>
+    <linearGradient id="mBody" x1=".2" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#eef5fc"/>
+      <stop offset=".78" stop-color="#d5e2f0"/><stop offset="1" stop-color="#b9cbdd"/>
+    </linearGradient>
+    <linearGradient id="mVisor" x1=".3" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#183753"/><stop offset=".55" stop-color="#0c1d2d"/><stop offset="1" stop-color="#060f18"/>
+    </linearGradient>
+    <linearGradient id="mEye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ccfdff"/><stop offset=".5" stop-color="#5fe0ff"/><stop offset="1" stop-color="#25b3ef"/>
+    </linearGradient>
+    <radialGradient id="mShade" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#0a1520" stop-opacity=".45"/><stop offset="1" stop-color="#0a1520" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <ellipse class="m-shadow" cx="120" cy="268" rx="60" ry="10"/>
+
+  <!-- 脚 -->
+  <ellipse cx="95" cy="248" rx="23" ry="18" fill="url(#mBody)"/>
+  <ellipse cx="145" cy="248" rx="23" ry="18" fill="url(#mBody)"/>
+  <ellipse cx="95" cy="253" rx="23" ry="10" fill="#b9cbdd" opacity=".5"/>
+  <ellipse cx="145" cy="253" rx="23" ry="10" fill="#b9cbdd" opacity=".5"/>
+
+  <!-- 机械手 -->
+  <g class="m-arm m-arm-l">
+    <rect x="44" y="124" width="30" height="72" rx="15" fill="url(#mBody)"/>
+    <circle cx="59" cy="199" r="19" fill="#ffffff"/>
+    <path d="M50 197h18" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="m-arm m-arm-r">
+    <rect x="166" y="124" width="30" height="72" rx="15" fill="url(#mBody)"/>
+    <circle cx="181" cy="199" r="19" fill="#ffffff"/>
+    <path d="M172 197h18" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 身体 -->
+  <rect x="65" y="32" width="110" height="208" rx="55" fill="url(#mBody)" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <ellipse cx="92" cy="72" rx="27" ry="18" fill="#ffffff" opacity=".6"/>
+  <path d="M172 62c8 14 10 30 8 44" stroke="#ffffff" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/>
+  <path d="M72 164h96" stroke="#cfdceb" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+  <ellipse cx="120" cy="214" rx="50" ry="24" fill="url(#mShade)" opacity=".8"/>
+
+  <!-- 面罩 -->
+  <rect x="76" y="56" width="88" height="76" rx="36" fill="url(#mVisor)"/>
+  <rect x="79" y="59" width="82" height="70" rx="34" fill="none" stroke="#3d6b91" stroke-width="1" opacity=".35"/>
+  <rect class="m-eye" x="95" y="76" width="14" height="37" rx="7" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <rect class="m-eye" x="131" y="76" width="14" height="37" rx="7" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <path d="M89 76c8-9 20-12 31-11" stroke="#a7c2da" stroke-width="2.4" fill="none" opacity=".45" stroke-linecap="round"/>
+
+  <!-- 思考气泡 / 睡觉 -->
+  <g class="m-thought">
+    <circle cx="196" cy="82" r="4.5"/><circle cx="210" cy="60" r="6.5"/><circle cx="228" cy="34" r="9.5"/>
+  </g>
+  <g class="m-zzz"><text x="186" y="66">z</text><text x="206" y="44">z</text></g>
+</svg></div></div>
+    <p class="buddy-tip center-tip reveal"><span class="mascot-head" data-mascot-head></span><span>小岛：下载和更新都在 GitHub 的 Release 页面，点上面按钮会直达到对应仓库，不会有中间页。</span></p>
 
     <div class="install reveal">
       <h3>三步开始</h3>
@@ -465,10 +584,70 @@
   <!-- ================= FAQ ================= -->
   <section class="section" id="faq">
     <div class="section-head reveal">
-      <span class="eyebrow with-mascot"><img src="assets/img/mascot-face.png" alt="">小岛答疑 · 常见问题</span>
+      <span class="eyebrow with-mascot"><span class="mascot-head" data-mascot-head></span>小岛答疑 · 常见问题</span>
       <h2>你可能想问</h2>
     </div>
 
+    <div class="faq-mascot reveal"><div class="mascot-stand pose-think"><svg class="mascot hero-mascot" viewBox="0 0 240 282" role="img" aria-label="小岛">
+  <defs>
+    <linearGradient id="mBody" x1=".2" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#eef5fc"/>
+      <stop offset=".78" stop-color="#d5e2f0"/><stop offset="1" stop-color="#b9cbdd"/>
+    </linearGradient>
+    <linearGradient id="mVisor" x1=".3" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#183753"/><stop offset=".55" stop-color="#0c1d2d"/><stop offset="1" stop-color="#060f18"/>
+    </linearGradient>
+    <linearGradient id="mEye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ccfdff"/><stop offset=".5" stop-color="#5fe0ff"/><stop offset="1" stop-color="#25b3ef"/>
+    </linearGradient>
+    <radialGradient id="mShade" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#0a1520" stop-opacity=".45"/><stop offset="1" stop-color="#0a1520" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <ellipse class="m-shadow" cx="120" cy="268" rx="60" ry="10"/>
+
+  <!-- 脚 -->
+  <ellipse cx="95" cy="248" rx="23" ry="18" fill="url(#mBody)"/>
+  <ellipse cx="145" cy="248" rx="23" ry="18" fill="url(#mBody)"/>
+  <ellipse cx="95" cy="253" rx="23" ry="10" fill="#b9cbdd" opacity=".5"/>
+  <ellipse cx="145" cy="253" rx="23" ry="10" fill="#b9cbdd" opacity=".5"/>
+
+  <!-- 机械手 -->
+  <g class="m-arm m-arm-l">
+    <rect x="44" y="124" width="30" height="72" rx="15" fill="url(#mBody)"/>
+    <circle cx="59" cy="199" r="19" fill="#ffffff"/>
+    <path d="M50 197h18" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="m-arm m-arm-r">
+    <rect x="166" y="124" width="30" height="72" rx="15" fill="url(#mBody)"/>
+    <circle cx="181" cy="199" r="19" fill="#ffffff"/>
+    <path d="M172 197h18" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 身体 -->
+  <rect x="65" y="32" width="110" height="208" rx="55" fill="url(#mBody)" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <ellipse cx="92" cy="72" rx="27" ry="18" fill="#ffffff" opacity=".6"/>
+  <path d="M172 62c8 14 10 30 8 44" stroke="#ffffff" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/>
+  <path d="M72 164h96" stroke="#cfdceb" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+  <ellipse cx="120" cy="214" rx="50" ry="24" fill="url(#mShade)" opacity=".8"/>
+
+  <!-- 面罩 -->
+  <rect x="76" y="56" width="88" height="76" rx="36" fill="url(#mVisor)"/>
+  <rect x="79" y="59" width="82" height="70" rx="34" fill="none" stroke="#3d6b91" stroke-width="1" opacity=".35"/>
+  <rect class="m-eye" x="95" y="76" width="14" height="37" rx="7" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <rect class="m-eye" x="131" y="76" width="14" height="37" rx="7" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <path d="M89 76c8-9 20-12 31-11" stroke="#a7c2da" stroke-width="2.4" fill="none" opacity=".45" stroke-linecap="round"/>
+
+  <!-- 思考气泡 / 睡觉 -->
+  <g class="m-thought">
+    <circle cx="196" cy="82" r="4.5"/><circle cx="210" cy="60" r="6.5"/><circle cx="228" cy="34" r="9.5"/>
+  </g>
+  <g class="m-zzz"><text x="186" y="66">z</text><text x="206" y="44">z</text></g>
+</svg></div></div>
     <div class="faq reveal">
       <details>
         <summary>双击没反应 / 一闪而过？</summary>
@@ -515,6 +694,66 @@
 
 <footer class="footer">
   <div class="foot-inner">
+    <div class="mascot-stand pose-sleep foot-mascot"><svg class="mascot hero-mascot" viewBox="0 0 240 282" role="img" aria-label="小岛">
+  <defs>
+    <linearGradient id="mBody" x1=".2" y1="0" x2=".8" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#eef5fc"/>
+      <stop offset=".78" stop-color="#d5e2f0"/><stop offset="1" stop-color="#b9cbdd"/>
+    </linearGradient>
+    <linearGradient id="mVisor" x1=".3" y1="0" x2=".7" y2="1">
+      <stop offset="0" stop-color="#183753"/><stop offset=".55" stop-color="#0c1d2d"/><stop offset="1" stop-color="#060f18"/>
+    </linearGradient>
+    <linearGradient id="mEye" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ccfdff"/><stop offset=".5" stop-color="#5fe0ff"/><stop offset="1" stop-color="#25b3ef"/>
+    </linearGradient>
+    <radialGradient id="mShade" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#0a1520" stop-opacity=".45"/><stop offset="1" stop-color="#0a1520" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <ellipse class="m-shadow" cx="120" cy="268" rx="60" ry="10"/>
+
+  <!-- 脚 -->
+  <ellipse cx="95" cy="248" rx="23" ry="18" fill="url(#mBody)"/>
+  <ellipse cx="145" cy="248" rx="23" ry="18" fill="url(#mBody)"/>
+  <ellipse cx="95" cy="253" rx="23" ry="10" fill="#b9cbdd" opacity=".5"/>
+  <ellipse cx="145" cy="253" rx="23" ry="10" fill="#b9cbdd" opacity=".5"/>
+
+  <!-- 机械手 -->
+  <g class="m-arm m-arm-l">
+    <rect x="44" y="124" width="30" height="72" rx="15" fill="url(#mBody)"/>
+    <circle cx="59" cy="199" r="19" fill="#ffffff"/>
+    <path d="M50 197h18" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g class="m-arm m-arm-r">
+    <rect x="166" y="124" width="30" height="72" rx="15" fill="url(#mBody)"/>
+    <circle cx="181" cy="199" r="19" fill="#ffffff"/>
+    <path d="M172 197h18" stroke="#dbe6f2" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 身体 -->
+  <rect x="65" y="32" width="110" height="208" rx="55" fill="url(#mBody)" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  <ellipse cx="92" cy="72" rx="27" ry="18" fill="#ffffff" opacity=".6"/>
+  <path d="M172 62c8 14 10 30 8 44" stroke="#ffffff" stroke-width="3" opacity=".35" fill="none" stroke-linecap="round"/>
+  <path d="M72 164h96" stroke="#cfdceb" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+  <ellipse cx="120" cy="214" rx="50" ry="24" fill="url(#mShade)" opacity=".8"/>
+
+  <!-- 面罩 -->
+  <rect x="76" y="56" width="88" height="76" rx="36" fill="url(#mVisor)"/>
+  <rect x="79" y="59" width="82" height="70" rx="34" fill="none" stroke="#3d6b91" stroke-width="1" opacity=".35"/>
+  <rect class="m-eye" x="95" y="76" width="14" height="37" rx="7" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <rect class="m-eye" x="131" y="76" width="14" height="37" rx="7" fill="url(#mEye)" filter="url(#mGlow)"/>
+  <path d="M89 76c8-9 20-12 31-11" stroke="#a7c2da" stroke-width="2.4" fill="none" opacity=".45" stroke-linecap="round"/>
+
+  <!-- 思考气泡 / 睡觉 -->
+  <g class="m-thought">
+    <circle cx="196" cy="82" r="4.5"/><circle cx="210" cy="60" r="6.5"/><circle cx="228" cy="34" r="9.5"/>
+  </g>
+  <g class="m-zzz"><text x="186" y="66">z</text><text x="206" y="44">z</text></g>
+</svg></div>
     <div class="foot-brand">
       <img src="assets/img/app-icon.png" alt="" width="28" height="28">
       <div>
